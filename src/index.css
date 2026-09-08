@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  font-family:
+    "Google Sans",
+    "Google Sans Text",
+    Arial,
+    sans-serif;
+
+  color: #202124;
+
+  background: white;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+}

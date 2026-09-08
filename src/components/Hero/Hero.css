@@ -1,0 +1,153 @@
+.hero {
+  position: relative;
+
+  width: calc(100% - 90px);
+  margin: 23px auto 0;
+
+  aspect-ratio: 16 / 9;
+
+  max-height: calc(100vh - 83px);
+
+  background:
+    radial-gradient(
+      ellipse 45% 70% at 58% 50%,
+      #143576 0%,
+      #0F2046 30%,
+      transparent 70%
+    ),
+
+    radial-gradient(
+      ellipse 35% 55% at 32% 55%,
+      #0F1E31 0%,
+      #0B0E1B 55%,
+      transparent 80%
+    ),
+
+    radial-gradient(
+      ellipse 30% 45% at 78% 35%,
+      #143576 0%,
+      transparent 75%
+    ),
+
+    linear-gradient(
+      135deg,
+      #0B0C0E 0%,
+      #0B0E1B 45%,
+      #0F1E31 70%,
+      #0B0C0E 100%
+    );
+
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.hero-content {
+  width: 600px;
+
+  text-align: center;
+
+  color: white;
+
+  transform: translateY(-5px);
+}
+
+.hero-content h1 {
+  margin: 0;
+
+  font-size: clamp(40px, 4vw, 58px);
+
+  font-weight: 400;
+
+  line-height: 1.08;
+
+  letter-spacing: -1.8px;
+}
+
+.hero-content p {
+  max-width: 620px;
+
+  margin: 24px auto 0;
+
+  font-size: 16px;
+
+  line-height: 1.4;
+
+  color: #fff;
+}
+
+.hero-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 24px;
+
+  padding: 13px 23px;
+
+  border-radius: 30px;
+
+  background: #1a73e8;
+
+  color: white;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.hero-button:hover {
+  background: #1769d1;
+
+  transform: translateY(-1px);
+}
+
+@media (max-width: 900px) {
+  .hero {
+    width: calc(100% - 40px);
+
+    margin-top: 15px;
+  }
+
+  .hero-content {
+    width: 85%;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    width: calc(100% - 24px);
+
+    aspect-ratio: 4 / 5;
+
+    max-height: none;
+  }
+
+  .hero-content {
+    width: 90%;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+
+    letter-spacing: -1px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+}
